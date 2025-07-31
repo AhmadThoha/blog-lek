@@ -3,38 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Materi: Pemrograman Web</title>
+  <title>Materi: Pemrograman Web & Keamanan</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body class="bg-gray-100 font-sans leading-relaxed tracking-wide">
+<body class="bg-gray-50 font-sans">
 
-  <div class="max-w-6xl mx-auto p-8 bg-white shadow-md mt-10 rounded-lg">
-    <img src="https://picsum.photos/id/1005/1600/500" class="rounded-lg mb-6 w-full h-auto" />
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-12 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold mb-2">🌐 Pemrograman Web & Keamanan</h1>
+      <p class="text-lg">Front-End, Back-End, dan Dasar Keamanan Web untuk siswa SMK</p>
+    </div>
+  </header>
 
-    <h1 class="text-3xl xl:text-4xl font-bold text-gray-800 mb-6">Dasar Pemrograman Web & Keamanan</h1>
-
-    <p class="text-gray-700 text-lg mb-6">
-      Pemrograman web adalah proses membuat aplikasi berbasis browser yang interaktif dan dinamis. Materi ini mencakup pemahaman dasar front-end, back-end, serta keamanan data pengguna.
-    </p>
-
-    <ul class="list-disc list-inside text-gray-700 text-base xl:text-lg space-y-2 mb-6">
-      <li><strong>Front-End Web:</strong> HTML, CSS, JavaScript untuk membuat tampilan antarmuka pengguna (UI).</li>
-      <li><strong>Back-End Web:</strong> Penggunaan PHP, Node.js, atau Python untuk logika server dan pengolahan data.</li>
-      <li><strong>API (Application Programming Interface):</strong> Pertukaran data antar sistem, misalnya menggunakan REST API atau JSON.</li>
-      <li><strong>Session & Cookie:</strong> Teknik penyimpanan data pengguna agar tetap login atau menyimpan preferensi pengguna.</li>
-      <li><strong>Session Hijacking:</strong> Ancaman keamanan di mana peretas mencuri session pengguna. Pencegahan: penggunaan HTTPS, token CSRF, dan logout otomatis.</li>
-      <li><strong>Validasi Form:</strong> Mencegah input berbahaya dengan validasi di sisi klien (JavaScript) dan server (PHP, dll).</li>
-      <li><strong>Keamanan Dasar:</strong> Sanitasi input, enkripsi password, dan pembatasan akses berdasarkan role pengguna.</li>
-    </ul>
-
-    <p class="text-gray-700 text-lg mb-6">
-      Memahami konsep-konsep ini membantu siswa dalam membuat aplikasi web yang aman dan profesional, serta siap terhubung dengan sistem modern seperti database dan layanan pihak ketiga.
-    </p>
-
-    <a href="index.html" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition duration-200">
-      ← Kembali ke Daftar Materi
-    </a>
+  <!-- Hero Image -->
+  <div class="max-w-6xl mx-auto mt-8 px-6">
+    <img src="https://picsum.photos/id/1005/1600/500" class="rounded-xl shadow-lg w-full" alt="Ilustrasi Pemrograman Web" />
   </div>
+
+  <!-- Konten -->
+  <main class="max-w-6xl mx-auto px-6 py-10 grid gap-10">
+
+    <!-- Front-End -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🎨 Front-End Web</h2>
+      <p class="mb-2">Menggunakan HTML, CSS, dan JavaScript untuk membangun antarmuka pengguna (UI).</p>
+      <pre class="bg-gray-100 p-4 rounded text-sm"><code>&lt;button onclick="alert('Halo!')"&gt;Klik Saya&lt;/button&gt;</code></pre>
+      <p class="mt-2 text-gray-700">🔍 Tombol interaktif sederhana menggunakan JavaScript.</p>
+    </section>
+
+    <!-- Back-End -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🔧 Back-End Web</h2>
+      <p class="mb-2">Pemrosesan data di sisi server menggunakan bahasa seperti PHP atau Node.js.</p>
+      <pre class="bg-gray-100 p-4 rounded text-sm"><code>&lt;?php
+$nama = "Siswa";
+echo "Selamat datang, $nama!";
+?&gt;</code></pre>
+      <p class="mt-2 text-gray-700">🔍 Script PHP sederhana untuk menampilkan ucapan selamat datang.</p>
+    </section>
+
+    <!-- API -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🔗 API (Application Programming Interface)</h2>
+      <p class="mb-2">Menghubungkan antar aplikasi menggunakan REST API atau JSON.</p>
+      <pre class="bg-gray-100 p-4 rounded text-sm"><code>fetch('/api/data')
+  .then(response =&gt; response.json())
+  .then(data =&gt; console.log(data));</code></pre>
+      <p class="mt-2 text-gray-700">🔍 Contoh permintaan API menggunakan JavaScript.</p>
+    </section>
+
+    <!-- Keamanan Web -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🔐 Keamanan Web</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+        <li><strong>Session & Cookie:</strong> Menyimpan informasi pengguna.</li>
+        <li><strong>Session Hijacking:</strong> Ancaman mencuri session pengguna.</li>
+        <li><strong>Validasi Form:</strong> Cek input agar tidak membahayakan sistem.</li>
+        <li><strong>Praktik Aman:</strong> Gunakan HTTPS, CSRF Token, dan enkripsi password.</li>
+      </ul>
+      <p class="text-gray-700">🔍 Praktik keamanan penting agar aplikasi tidak mudah diserang.</p>
+    </section>
+
+    <!-- Contoh Struktur HTML -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">💻 Contoh Struktur HTML</h2>
+      <pre class="bg-gray-100 p-4 rounded text-sm"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Contoh HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+  &lt;p&gt;Ini paragraf pertama dalam HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p class="mt-2 text-gray-700">🔍 Struktur dasar dokumen HTML.</p>
+    </section>
+
+    <!-- Penutup -->
+    <div class="bg-blue-50 p-6 rounded-lg shadow text-center">
+      <p class="text-lg text-gray-700 mb-4">
+        Dengan memahami pemrograman web dan keamanannya, kamu bisa membuat aplikasi web yang modern, interaktif, dan aman!
+      </p>
+      <a href="index.html" class="inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        ← Kembali ke Daftar Materi
+      </a>
+    </div>
+
+  </main>
 
 </body>
 </html>

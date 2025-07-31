@@ -3,42 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Materi: Dasar Pemrograman C++</title>
+  <title>Materi Dasar Pemrograman C++</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans leading-relaxed tracking-wide">
+<body class="bg-gray-50 font-sans">
 
-  <div class="max-w-6xl mx-auto p-8 bg-white shadow-md mt-10 rounded-lg">
-    <img src="https://picsum.photos/id/1015/1600/500" class="rounded-lg mb-6 w-full h-auto" />
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-12 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold mb-2">📘 Dasar Pemrograman C++</h1>
+      <p class="text-lg">Struktur program, variabel, logika, dan input/output untuk pemula</p>
+    </div>
+  </header>
 
-    <h1 class="text-4xl font-bold text-gray-800 mb-6">Dasar Pemrograman C++</h1>
+  <!-- Hero Image -->
+  <div class="max-w-6xl mx-auto mt-8 px-6">
+    <img src="https://picsum.photos/id/1015/1600/500" class="rounded-xl shadow-lg w-full" alt="Ilustrasi C++" />
+  </div>
 
-    <p class="text-gray-700 text-lg mb-6">
-      C++ adalah bahasa pemrograman tingkat menengah yang banyak digunakan dalam pengembangan perangkat lunak, game, sistem embedded, dan aplikasi desktop. Materi ini mengenalkan siswa pada struktur dan logika dasar dalam membangun program menggunakan C++.
-    </p>
+  <!-- Konten -->
+  <main class="max-w-6xl mx-auto px-6 py-10 grid gap-10">
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Materi yang Dipelajari:</h2>
-    <ul class="list-disc list-inside text-gray-700 text-base xl:text-lg space-y-2 mb-6">
-      <li>Struktur program C++ dan fungsi <code>main()</code></li>
-      <li>Deklarasi variabel dan tipe data (int, float, char, dll.)</li>
-      <li>Operator aritmatika dan logika</li>
-      <li>Penggunaan kontrol alur (if, switch, for, while)</li>
-      <li>Pengenalan fungsi dan modularisasi</li>
-      <li>Input/output dasar menggunakan <code>cin</code> dan <code>cout</code></li>
-    </ul>
+    <!-- Pengantar -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">📖 Pengantar C++</h2>
+      <p class="text-gray-700 text-lg">
+        C++ adalah bahasa pemrograman tingkat menengah yang banyak digunakan dalam pengembangan perangkat lunak, game, sistem embedded, dan aplikasi desktop. Materi ini mengenalkan struktur dan logika dasar dalam membangun program menggunakan C++.
+      </p>
+    </section>
 
-    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Contoh Program Sederhana:</h2>
-    <p class="text-gray-700 text-lg mb-4">
-      Program di bawah ini akan meminta pengguna memasukkan dua angka, lalu menampilkan hasil penjumlahannya:
-    </p>
+    <!-- Materi Pokok -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🧠 Materi yang Dipelajari</h2>
+      <ul class="list-disc list-inside text-gray-700 text-base xl:text-lg space-y-2">
+        <li>Struktur program C++ dan fungsi <code>main()</code></li>
+        <li>Deklarasi variabel dan tipe data (int, float, char, dll.)</li>
+        <li>Operator aritmatika dan logika</li>
+        <li>Kontrol alur: <code>if</code>, <code>switch</code>, <code>for</code>, <code>while</code></li>
+        <li>Fungsi dan modularisasi kode</li>
+        <li>Input/output dasar menggunakan <code>cin</code> dan <code>cout</code></li>
+      </ul>
+    </section>
 
-    <pre class="bg-gray-100 text-sm text-gray-800 p-4 rounded-md overflow-auto mb-6"><code>
+    <!-- Contoh Program -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">💡 Contoh Program Sederhana</h2>
+      <p class="text-gray-700 mb-4 text-lg">
+        Program berikut meminta pengguna memasukkan dua angka, lalu mencetak hasil penjumlahannya:
+      </p>
+      <pre class="bg-gray-100 text-sm text-gray-800 p-4 rounded-md overflow-auto mb-4"><code>
 #include &lt;iostream&gt;
 using namespace std;
 
 int main() {
     int a, b, hasil;
-    
+
     cout &lt;&lt; "Masukkan angka pertama: ";
     cin &gt;&gt; a;
 
@@ -51,16 +70,21 @@ int main() {
 
     return 0;
 }
-    </code></pre>
+      </code></pre>
+      <p class="text-gray-700">
+        🔍 Program di atas menggunakan <code>cin</code> untuk input dan <code>cout</code> untuk output. Struktur ini sangat penting untuk pemula sebelum mempelajari array, function, dan konsep OOP.
+      </p>
+    </section>
 
-    <p class="text-gray-700 text-lg mb-6">
-      Program di atas menggunakan <code>cin</code> untuk input, dan <code>cout</code> untuk output. Struktur dasar seperti ini sangat penting untuk pemula sebelum melanjutkan ke konsep lebih kompleks seperti array, function, dan OOP.
-    </p>
+    <!-- Penutup -->
+    <div class="bg-blue-50 p-6 rounded-lg shadow text-center">
+      <p class="text-lg text-gray-700 mb-4">
+        Dengan memahami dasar ini, kamu siap menjelajahi logika pemrograman lebih kompleks di masa depan!
+      </p>
+      <a href="index.html" class="inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">← Kembali ke Daftar Materi</a>
+    </div>
 
-    <a href="index.html" class="inline-block mt-6 px-5 py-2 bg-green-600 text-white rounded hover:bg-blue-700 transition">
-      ← Kembali ke Daftar Materi
-    </a>
-  </div>
+  </main>
 
 </body>
 </html>
