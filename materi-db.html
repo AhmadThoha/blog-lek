@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Materi: Basis Data Lanjutan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-12 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold mb-2">🗄️ Materi Basis Data Lanjutan</h1>
+      <p class="text-lg">SQL, JOIN, Subquery, dan DBMS untuk siswa kelas 11 RPL</p>
+    </div>
+  </header>
+
+  <!-- Hero Image -->
+  <div class="max-w-6xl mx-auto mt-8 px-6">
+    <img src="https://picsum.photos/id/1043/1600/500" class="rounded-xl shadow-lg w-full" alt="Ilustrasi Basis Data" />
+  </div>
+
+  <!-- Konten -->
+  <main class="max-w-6xl mx-auto px-6 py-10 grid gap-10">
+
+    <!-- DBMS -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🧩 DBMS (Database Management System)</h2>
+      <p class="mb-2">DBMS adalah perangkat lunak untuk membuat dan mengelola database. Contohnya: MySQL, Oracle, PostgreSQL, SQL Server.</p>
+      <p class="text-gray-700">🔍 DBMS memudahkan penyimpanan, akses, dan manipulasi data secara efisien.</p>
+    </section>
+
+    <!-- DDL -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">📐 DDL (Data Definition Language)</h2>
+      <ul class="list-disc ml-5 text-gray-700 mb-2">
+        <li><code>CREATE</code> – Membuat tabel atau objek database.</li>
+        <li><code>ALTER</code> – Mengubah struktur tabel (menambah/ubah kolom).</li>
+        <li><code>DROP</code> – Menghapus tabel atau objek.</li>
+      </ul>
+      <p class="text-gray-700">🔍 DDL digunakan untuk mendefinisikan struktur database.</p>
+    </section>
+
+    <!-- DML -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">📝 DML (Data Manipulation Language)</h2>
+      <ul class="list-disc ml-5 text-gray-700 mb-2">
+        <li><code>SELECT</code> – Mengambil data dari tabel.</li>
+        <li><code>INSERT</code> – Menambahkan data ke tabel.</li>
+        <li><code>UPDATE</code> – Mengubah data di tabel.</li>
+        <li><code>DELETE</code> – Menghapus data dari tabel.</li>
+      </ul>
+      <p class="text-gray-700">🔍 DML digunakan untuk manipulasi isi data dalam tabel.</p>
+    </section>
+
+    <!-- DCL -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🔒 DCL (Data Control Language)</h2>
+      <ul class="list-disc ml-5 text-gray-700 mb-2">
+        <li><code>GRANT</code> – Memberikan hak akses ke pengguna.</li>
+        <li><code>REVOKE</code> – Menghapus hak akses dari pengguna.</li>
+      </ul>
+      <p class="text-gray-700">🔍 Digunakan untuk mengatur hak akses pada database.</p>
+    </section>
+
+    <!-- Subquery -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🔁 Subquery (Query Bersarang)</h2>
+      <p class="mb-2">Subquery adalah query yang berada di dalam query lain.</p>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-auto mb-2">
+SELECT * FROM produk 
+WHERE harga &gt; (SELECT AVG(harga) FROM produk);
+      </pre>
+      <p class="text-gray-700">🔍 Menampilkan produk yang harganya di atas rata-rata.</p>
+    </section>
+
+    <!-- JOIN -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">🔗 JOIN (Menggabungkan Tabel)</h2>
+      <p class="mb-2">JOIN digunakan untuk mengambil data dari beberapa tabel yang saling berelasi.</p>
+      <ul class="list-disc ml-5 text-gray-700 mb-2">
+        <li><strong>INNER JOIN</strong>: Menampilkan data yang cocok di kedua tabel.</li>
+        <li><strong>LEFT JOIN</strong>: Menampilkan semua data dari tabel kiri dan yang cocok dari tabel kanan.</li>
+        <li><strong>RIGHT JOIN</strong>: Menampilkan semua data dari tabel kanan dan yang cocok dari tabel kiri.</li>
+      </ul>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-auto mb-2">
+SELECT pelanggan.nama, transaksi.total
+FROM pelanggan
+INNER JOIN transaksi ON pelanggan.id = transaksi.pelanggan_id;
+      </pre>
+      <p class="text-gray-700">🔍 Menampilkan nama pelanggan dan total transaksi mereka.</p>
+    </section>
+
+    <!-- Penutup -->
+    <div class="bg-blue-50 p-6 rounded-lg shadow text-center">
+      <p class="text-lg text-gray-700 mb-4">
+        Dengan memahami konsep dasar hingga lanjutan basis data, kamu siap membangun aplikasi database profesional!
+      </p>
+      <a href="index.html" class="inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">← Kembali ke Daftar Materi</a>
+    </div>
+
+  </main>
+
+</body>
+</html>

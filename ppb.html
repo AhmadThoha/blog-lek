@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Materi: PPB - Flutter & Dart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide">
+
+  <div class="max-w-6xl mx-auto p-8 bg-white shadow-md mt-10 rounded-lg">
+    <img src="https://picsum.photos/id/1085/1600/500" class="rounded-lg mb-6 w-full h-auto" />
+
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">PPB (Pemrograman Perangkat Bergerak)</h1>
+
+    <p class="text-gray-700 text-lg mb-6">
+      Pada mata pelajaran ini, siswa akan belajar membangun aplikasi mobile berbasis Android dan iOS menggunakan <strong>Flutter</strong>, framework UI modern yang menggunakan bahasa <strong>Dart</strong>. 
+      Fokus pembelajaran mencakup pembuatan antarmuka, manajemen state, hingga penggunaan database lokal.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Materi Utama:</h2>
+    <ul class="list-disc list-inside text-gray-700 text-base xl:text-lg space-y-2 mb-6">
+      <li>Pengenalan Flutter dan bahasa Dart</li>
+      <li>Struktur project Flutter dan penggunaan widget</li>
+      <li>Layouting responsif dengan Row, Column, Container, ListView</li>
+      <li>Handling event dan interaktivitas (onPressed, gesture)</li>
+      <li>Navigasi antar halaman dengan <code>Navigator</code></li>
+      <li>Penggunaan state management dasar (setState)</li>
+      <li>Database lokal dengan <strong>Hive</strong> atau <strong>SQLite</strong></li>
+      <li>Build dan deploy ke perangkat Android/iOS</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Contoh Kode Flutter (Hello World):</h2>
+
+    <pre class="bg-gray-100 text-sm text-gray-800 p-4 rounded-md overflow-auto mb-6"><code>
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text('Hello Flutter')),
+        body: Center(child: Text('Halo Dunia!', style: TextStyle(fontSize: 24))),
+      ),
+    );
+  }
+}
+    </code></pre>
+
+    <p class="text-gray-700 text-lg mb-6">
+      Contoh di atas adalah aplikasi Flutter paling dasar. Siswa akan belajar mengembangkan aplikasi lebih kompleks seperti To-Do List, Kalkulator, dan Aplikasi Kasir berbasis Flutter.
+    </p>
+
+    <a href="index.html" class="inline-block mt-6 px-5 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">
+      ← Kembali ke Daftar Materi
+    </a>
+  </div>
+
+</body>
+</html>
